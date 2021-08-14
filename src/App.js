@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 
 import * as qna from '@tensorflow-models/qna';
@@ -29,7 +28,7 @@ function App() {
 
   const qsAnswer =async(e)=>
   {
-    if(e.which==13 && model!=null)
+    if(e.which===13 && model!=null)
     {
       console.log("Question asked.")
       const passage=passageRef.current.value
